@@ -109,7 +109,7 @@ A personal finance management system built with PHP and MySQL that allows you to
 
 | Expense Tracking | Annual Summary |
 |---|---|
-| ![Expense Tracking](screenshots/genelgider.png) | ![Annual Summary](screenshot/yilliközet.png) |
+| ![Expense Tracking](screenshot/genelgider.png) | ![Annual Summary](screenshot/yilliközet.png) |
 
 ---
 
