@@ -148,7 +148,7 @@ A personal finance management system built with PHP and MySQL that allows you to
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 * **Backend:** ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 * **Database:** ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
