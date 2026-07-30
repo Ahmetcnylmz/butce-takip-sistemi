@@ -1,0 +1,279 @@
+/* =====================================================
+   EV & MARKET SAYFASI - SAYFAYA ÖZEL STİLLER
+   Genel tasarım (sidebar, topbar, kart, tablo vb.)
+   css/index.css dosyasındadır. Burada sadece bu
+   sayfaya özgü form ve kategori kutusu stilleri var.
+===================================================== */
+
+/* --- Yeni Harcama Ekle Formu --- */
+.ev-market-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 4px 0 0;
+}
+
+.ev-form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ev-form-group {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ev-form-group label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.ev-form-group input,
+.ev-form-group select {
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--text-main);
+  background: var(--bg-main);
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.ev-form-group input:focus,
+.ev-form-group select:focus {
+  border-color: var(--primary);
+  background: var(--input-bg);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12);
+}
+
+.ev-btn-submit {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: var(--transition-smooth);
+}
+
+.ev-btn-submit:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* --- Bu Ay Neye Harcama Yapıldı Kutuları --- */
+.ev-category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 4px 0 0;
+}
+
+.ev-category-box {
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--c, var(--primary));
+  border-radius: var(--radius-sm);
+  padding: 15px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: var(--transition-smooth);
+}
+
+.ev-category-box:hover {
+  background: #eef1f7;
+}
+
+.ev-category-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  background: var(--c-bg, var(--primary-light));
+  color: var(--c-text, var(--primary));
+}
+
+.ev-category-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ev-category-box strong {
+  display: block;
+  font-size: 0.86rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.ev-category-box small {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.ev-category-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.ev-category-amount {
+  font-weight: 700;
+  color: var(--heading-color);
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.ev-category-pct {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* --- Toplam Limit: Tıklayıp Düzenleme --- */
+.ev-limit-editable {
+  cursor: pointer;
+  border-bottom: 1px dashed var(--text-muted);
+  display: inline-block;
+  transition: var(--transition-smooth);
+}
+
+.ev-limit-editable:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.ev-limit-input {
+  width: 90px;
+  padding: 4px 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--heading-color);
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  outline: none;
+}
+
+/* --- Bütçe Aşımı Uyarısı --- */
+.ev-budget-warning {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--danger);
+  background: var(--danger-light);
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.ev-budget-warning.show {
+  display: inline-flex;
+}
+
+/* --- Tablo Arama Kutusu --- */
+.ev-table-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 7px 14px;
+  min-width: 240px;
+}
+
+.ev-table-search i {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.ev-table-search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.82rem;
+  font-family: inherit;
+  color: var(--text-main);
+  width: 100%;
+}
+
+/* --- Aylık Grup Başlığı (harcamalar ay ay ayrılır) --- */
+.ev-month-header td {
+  background: var(--bg-main);
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ev-month-header:hover td {
+  background: var(--bg-main);
+}
+
+.ev-month-header .ev-month-total {
+  text-align: right;
+  color: var(--heading-color);
+  font-size: 0.8rem;
+}
+
+/* --- Boş Durum --- */
+.ev-empty-row td {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 28px 10px;
+}
+
+/* --- Toast Bildirimi --- */
+.ev-toast {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  background: #0f172a;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-card-hover);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: var(--transition-smooth);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ev-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ev-toast.error {
+  background: var(--danger);
+}

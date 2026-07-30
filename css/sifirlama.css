@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sifirla-kutu {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 36px 32px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px -12px rgba(15, 23, 42, 0.15);
+  text-align: center;
+  margin: 20px;
+}
+
+.sifirla-kutu i.baslik-ikon {
+  font-size: 2.2rem;
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.sifirla-kutu h2 {
+  margin: 8px 0 4px;
+  color: #0f172a;
+}
+
+.sifirla-kutu p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.sifirla-kutu label {
+  display: block;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.sifirla-kutu input[type="text"],
+.sifirla-kutu input[type="email"],
+.sifirla-kutu input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #e6e9f0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  font-family: inherit;
+}
+
+.sifirla-kutu button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.sifirla-kutu button:hover { background: #4338ca; }
+
+.sifirla-mesaj {
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+.sifirla-mesaj.hata { color: #ef4444; }
+.sifirla-mesaj.basari { color: #10b981; }
+
+.sifirla-alt-link {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: #4f46e5;
+  text-decoration: none;
+}
+.sifirla-alt-link:hover { text-decoration: underline; }
+
+.hp-alan { position: absolute; left: -9999px; }

@@ -1,0 +1,212 @@
+@import url("index.css");
+
+/* --- TİP SEÇİMİ (Borç / Alacak) --- */
+.borc-tip-secim {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.borc-tip-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--bg-main);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.borc-tip-btn:hover { background: #eef1f7; }
+
+.borc-tip-btn.active {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+/* --- BORÇ / ALACAK LİSTESİ --- */
+.borc-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.borc-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-main);
+  border-left: 4px solid var(--danger);
+  transition: var(--transition-smooth);
+}
+
+.borc-item.alacak { border-left-color: var(--success); }
+.borc-item.odendi { opacity: 0.55; }
+
+.borc-item:hover { background: #eef1f7; }
+
+.borc-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  background: var(--danger-light);
+  color: var(--danger);
+}
+.borc-item.alacak .borc-icon { background: var(--success-light); color: var(--success); }
+
+.borc-bilgi { flex: 1; min-width: 0; }
+.borc-bilgi strong { display: block; font-size: 0.9rem; color: var(--heading-color); }
+.borc-bilgi small { color: var(--text-muted); font-size: 0.78rem; }
+
+.borc-sag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.borc-tutar {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--heading-color);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.borc-aksiyon {
+  display: flex;
+  gap: 6px;
+}
+
+.borc-aksiyon button {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: rgba(0,0,0,0.05);
+}
+.borc-aksiyon button:hover { background: rgba(0,0,0,0.1); color: var(--text-main); }
+.borc-aksiyon .borc-ode:hover { background: var(--success-light); color: var(--success); }
+.borc-aksiyon .borc-sil:hover { background: var(--danger-light); color: var(--danger); }
+.borc-aksiyon .borc-duzenle {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.borc-aksiyon .borc-duzenle:hover { background: var(--primary-light); color: var(--primary); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =====================================================
+   FORM STİLLERİ (Yeni Borç/Alacak Ekle formu)
+   Not: bu sınıflar aslen abonelik formuyla ortak kullanılıyor,
+   bu sayfa abonelikler.css'i yüklemediği için buraya da eklendi.
+===================================================== */
+.sub-form {
+  border-top: 1px solid var(--border-color);
+  padding-top: 22px;
+}
+
+.sub-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 640px) {
+  .sub-form-row { grid-template-columns: 1fr; }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.form-field label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.form-field input,
+.form-field select {
+  padding: 11px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: var(--bg-main);
+  outline: none;
+  transition: var(--transition-smooth);
+  color: var(--text-main);
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: var(--primary);
+  background: var(--input-bg);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12);
+}
+
+.btn-add-sub {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 12px 22px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-add-sub:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 18px 0;
+}

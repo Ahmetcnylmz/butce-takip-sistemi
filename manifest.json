@@ -1,0 +1,32 @@
+{
+  "name": "Bütçe Takip Sistemi",
+  "short_name": "Bütçe Takip",
+  "description": "Gelir, gider, abonelik, hatırlatıcı ve borç/alacak takibini tek yerden yönet.",
+  "start_url": "index.php",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4f5fb",
+  "theme_color": "#4f46e5",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "logo/pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo/pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo/pwa/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
