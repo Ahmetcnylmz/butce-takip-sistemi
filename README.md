@@ -16,7 +16,7 @@ Gelir, gider, abonelik, hatırlatıcı ve borç/alacaklarını tek bir yerden ta
 |---|---|
 | ![Genel Bakış](screenshot/anasayfa.png) | ![Karanlık Mod](screenshot/darkmode.png) |
 
-| Genel Gider | Yönetim Paneli |
+| Genel Gider | Yıllık Özet |
 |---|---|
 | ![Genel Gider](screenshot/genelgider.png) | ![Yıllık Özet](screenshot/yilliközet.png) |
 
