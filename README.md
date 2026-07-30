@@ -71,7 +71,7 @@ Gelir, gider, abonelik, hatırlatıcı ve borç/alacaklarını tek bir yerden ta
 
 1. Bu depoyu klonla veya indir:
    ```bash
-   git clone https://github.com/Ahmetcnylmz/butcetakip.git
+   git clone https://github.com/Ahmetcnylmz/butce-takip-sistemi.git
    ```
 2. Dosyaları XAMPP/WAMP gibi bir sunucunun `htdocs` klasörüne kopyala.
 3. phpMyAdmin'den boş bir `butcetakip` adında veritabanı oluştur (tablo eklemene gerek yok, otomatik kurulur).
@@ -161,7 +161,7 @@ A personal finance management system built with PHP and MySQL that allows you to
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/Ahmetcnylmz/butcetakip.git
+   git clone https://github.com/Ahmetcnylmz/butce-takip-sistemi.git
    ```
 
 2. Copy the project files into the `htdocs` folder of XAMPP/WAMP.
