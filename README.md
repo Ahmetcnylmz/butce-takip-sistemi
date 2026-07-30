@@ -5,7 +5,6 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/Lisans-Eğitim%20Amaçlı-lightgrey)
 
 Gelir, gider, abonelik, hatırlatıcı ve borç/alacaklarını tek bir yerden takip edebileceğin, PHP ve MySQL ile geliştirilmiş kişisel bütçe yönetim sistemi.
 
@@ -15,11 +14,11 @@ Gelir, gider, abonelik, hatırlatıcı ve borç/alacaklarını tek bir yerden ta
 
 | Genel Bakış | Karanlık Mod |
 |---|---|
-| ![Genel Bakış](screenshots/anasayfa.png) | ![Karanlık Mod](screenshots/darkmode.png) |
+| ![Genel Bakış](screenshot/anasayfa.png) | ![Karanlık Mod](screenshot/darkmode.png) |
 
 | Genel Gider | Yönetim Paneli |
 |---|---|
-| ![Genel Gider](screenshots/genelgider.png) | ![Yıllık Özet](screenshots/yilliközet.png) |
+| ![Genel Gider](screenshot/genelgider.png) | ![Yıllık Özet](screenshot/yilliközet.png) |
 
 ---
 
@@ -61,9 +60,9 @@ Gelir, gider, abonelik, hatırlatıcı ve borç/alacaklarını tek bir yerden ta
 
 ## Kullanılan Teknolojiler
 
-* **Backend:** ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) Native PHP *(Framework kullanılmadı)*
-* **Veritabanı:** ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) MySQL / MariaDB
-* **Frontend:** ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) HTML5, ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) CSS3, ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+* **Backend:** ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+* **Veritabanı:** ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+* **Frontend:** ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white), ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white), ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 * **Grafik & Veri:** Chart.js
 * **Arayüz İkonları:** Font Awesome
 
